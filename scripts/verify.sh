@@ -3,8 +3,8 @@
 # This script verifies the reconciliation of all of the platform
 # services in the cluster.
 
-# This script is meant to be run locally to test the entire platform.
-# A similar check is also done in CI.
+# This script is a meant to be called by other scripts that set
+# up the surrounding environment in the cluster beforehand.
 
 echo "INFO - Waiting for kustomization/system reconciliation"
 kubectl -n flux-system wait kustomization/system \
