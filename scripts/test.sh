@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
 # This script sets up a kubernetes cluster in kind, then installs flux
-# and configures it to use the test cluster kustomize overlay.
+# and configures it to use the test cluster kustomize overlay against 
+# a user specified branch.
 # Then, it verifies all workloads come up successfully.
 
 # This script is meant to be run locally to test the entire platform.
@@ -10,6 +11,8 @@
 # Prerequisites
 # - docker
 # - kind v0.11.1
+
+BRANCH=${1:-main}
 
 cleanup() {
     echo "INFO - Deleting KIND cluster"
@@ -29,7 +32,7 @@ flux install
 echo "INFO - Adding cluster kustomization"
 flux create source git flux-system \
   --url=https://github.com/PHANTOMa-online/platform \
-  --branch=main
+  --branch=$BRANCH
 kubectl create secret generic sops-gpg \
   --namespace=flux-system \
   --from-file=secrets.test.PHANTOMa.online.asc=$(dirname $0)/../keys/secrets.test.PHANTOMa.online_55F41A1C028BCFC4.sec.asc
