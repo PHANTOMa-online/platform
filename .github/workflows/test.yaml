@@ -27,6 +27,9 @@ jobs:
           flux create source git flux-system \
             --url=${{ github.event.repository.html_url }} \
             --branch=${GITHUB_REF#refs/heads/}
+          kubectl create secret generic sops-gpg \
+            --namespace=flux-system \
+            --from-file=secrets.test.PHANTOMa.online.asc=./keys/secrets.test.PHANTOMa.online_55F41A1C028BCFC4.sec.asc
           flux create kustomization flux-system \
             --source=flux-system \
             --path=./clusters/test
