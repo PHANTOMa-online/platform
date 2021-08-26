@@ -16,7 +16,7 @@ cleanup() {
     kind delete cluster --name phantoma-test
 }
 
-trap cleanup ERR EXIT
+trap cleanup EXIT
 set -o errexit
 
 echo "INFO - Creating KIND cluster"
