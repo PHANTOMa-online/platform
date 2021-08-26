@@ -7,7 +7,7 @@ spec:
   sourceRef:
     kind: GitRepository
     name: flux-system
-  path: ./system
+  path: ./system/accela
   prune: true
   validation: client
   interval: 1m
