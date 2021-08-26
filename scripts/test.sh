@@ -30,6 +30,9 @@ echo "INFO - Adding cluster kustomization"
 flux create source git flux-system \
   --url=https://github.com/PHANTOMa-online/platform \
   --branch=main
+kubectl create secret generic sops-gpg \
+  --namespace=flux-system \
+  --from-file=secrets.test.PHANTOMa.online.asc=$(dirname $0)/../keys/secrets.test.PHANTOMa.online_55F41A1C028BCFC4.sec.asc
 flux create kustomization flux-system \
   --source=flux-system \
   --path=./clusters/test
