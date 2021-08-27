@@ -35,7 +35,7 @@ flux create source git flux-system \
   --branch=$BRANCH
 kubectl create secret generic sops-gpg \
   --namespace=flux-system \
-  --from-file=secrets.test.PHANTOMa.online.asc=$(dirname $0)/../keys/secrets.test.PHANTOMa.online_55F41A1C028BCFC4.sec.asc
+  --from-file=secrets.test.PHANTOMa.online.asc=$(dirname $0)/../keys/secrets.test.PHANTOMa.online_81EC941E1601C5D9.sec.asc
 flux create kustomization flux-system \
   --source=flux-system \
   --path=./clusters/test
