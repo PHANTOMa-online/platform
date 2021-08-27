@@ -1,0 +1,48 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: linkerd
+  namespace: linkerd
+spec:
+  chart:
+    spec:
+      chart: linkerd2
+      sourceRef:
+        kind: HelmRepository
+        name: linkerd-edge
+      version: 21.8.4
+  interval: 1m
+  dependsOn:
+    - name: linkerd-cni
+      namespace: linkerd-cni
+  valuesFrom:
+    - targetPath: identityTrustAnchorsPEM
+      kind: Secret
+      name: trust-anchor
+      valuesKey: tls.crt
+    - targetPath: proxyInjector.caBundle
+      kind: Secret
+      name: webhook-issuer
+      valuesKey: tls.crt
+    - targetPath: profileValidator.caBundle
+      kind: Secret
+      name: webhook-issuer
+      valuesKey: tls.crt
+  values:
+    # The namespace is already created by us
+    installNamespace: false
+
+    # --linkerd-cni-enabled
+    cniEnabled: true
+
+    # Use the linkerd-proxy-injector-k8s-tls secret managed by cert-manager
+    proxyInjector:
+      externalSecret: true
+    # Use the linkerd-sp-validator-k8s-tls secret managed by cert-manager
+    profileValidator:
+      externalSecret: true
+
+    identity:
+      issuer:
+        # Use the external linkerd-identity-issuer secret (--identity-external-issuer)
+        scheme: kubernetes.io/tls

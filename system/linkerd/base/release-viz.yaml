@@ -1,0 +1,38 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: linkerd-viz
+  namespace: linkerd-viz
+spec:
+  chart:
+    spec:
+      chart: linkerd-viz
+      sourceRef:
+        kind: HelmRepository
+        name: linkerd-edge
+      version: 21.8.4
+  interval: 1m
+  dependsOn:
+    - name: linkerd
+      namespace: linkerd
+  valuesFrom:
+    - kind: Secret
+      name: webhook-issuer
+      valuesKey: tls.crt
+      targetPath: tap.caBundle
+    - kind: Secret
+      name: webhook-issuer
+      valuesKey: tls.crt
+      targetPath: tapInjector.caBundle
+  values:
+    # The namespace is already created by us
+    installNamespace: false
+
+    # Use the tap-k8s-tls secret managed by cert-manager
+    tap:
+      externalSecret: true
+
+    # Use the tap-injector-k8s-tls secret managed by cert-manager
+    tapInjector:
+      externalSecret: true
+

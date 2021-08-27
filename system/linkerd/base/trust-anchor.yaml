@@ -1,0 +1,10 @@
+# The actual secret is omitted from this template file for the encrypted secret
+apiVersion: v1
+kind: Secret
+metadata:
+  name: trust-anchor
+  namespace: linkerd
+type: kubernetes.io/tls
+data:
+  tls.crt:
+  tls.key:

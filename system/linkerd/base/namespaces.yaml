@@ -1,0 +1,49 @@
+kind: Namespace
+apiVersion: v1
+metadata:
+  name: kube-system
+  annotations:
+    kustomize.toolkit.fluxcd.io/prune: disabled
+  labels:
+    config.linkerd.io/admission-webhooks: disabled
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: linkerd-cni
+  labels:
+    config.linkerd.io/admission-webhooks: disabled
+    linkerd.io/cni-resource: "true"
+  annotations:
+    linkerd.io/inject: disabled
+---
+kind: Namespace
+apiVersion: v1
+metadata:
+  name: linkerd
+  labels:
+    linkerd.io/is-control-plane: "true"
+    config.linkerd.io/admission-webhooks: disabled
+    linkerd.io/control-plane-ns: linkerd
+  annotations:
+    linkerd.io/inject: disabled
+---
+kind: Namespace
+apiVersion: v1
+metadata:
+  name: linkerd-viz
+  labels:
+    linkerd.io/extension: viz
+  annotations:
+    linkerd.io/inject: enabled
+    config.linkerd.io/proxy-await: "enabled"
+---
+kind: Namespace
+apiVersion: v1
+metadata:
+  name: linkerd-jaeger
+  labels:
+    linkerd.io/extension: jaeger
+  annotations:
+    linkerd.io/inject: enabled
+    config.linkerd.io/proxy-await: "enabled"

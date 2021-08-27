@@ -1,0 +1,16 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - namespaces.yaml
+
+  - trust-anchor.enc.yaml
+  - webhook-issuer.enc.yaml
+  - mtls-pki.yaml
+  - webhook-pki.yaml
+
+  - repo.yaml
+
+  - release-cni.yaml
+  - release-base.yaml
+  - release-viz.yaml
+  - release-jaeger.yaml
