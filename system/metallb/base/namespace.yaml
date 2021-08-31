@@ -1,0 +1,6 @@
+kind: Namespace
+apiVersion: v1
+metadata:
+  name: metallb
+  labels:
+    config.linkerd.io/admission-webhooks: disabled
