@@ -2,6 +2,9 @@ creation_rules:
   - path_regex: \.test\.yaml$
     encrypted_regex: ^(data|stringData)$
     pgp: 59E5F2DE820267D8E5D68C9F81EC941E1601C5D9
+  - path_regex: \.xerxes\.yaml$
+    encrypted_regex: ^(data|stringData)$
+    pgp: C51CD613AB8AF7D6A51A8D135DA6FE7E9E253BA2
   - path_regex: \.accela\.yaml$
     encrypted_regex: ^(data|stringData)$
     pgp: 12EB812DFF3E923A1212F3B712FCE56D151F694F
