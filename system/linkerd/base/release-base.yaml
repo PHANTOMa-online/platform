@@ -10,7 +10,7 @@ spec:
       sourceRef:
         kind: HelmRepository
         name: linkerd-edge
-      version: 21.8.4
+      version: 21.8.1
   interval: 1m
   dependsOn:
     - name: linkerd-cni
