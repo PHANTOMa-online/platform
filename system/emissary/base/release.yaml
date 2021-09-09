@@ -1,0 +1,45 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: emissary
+  namespace: emissary
+spec:
+  chart:
+    spec:
+      chart: ambassador
+      sourceRef:
+        kind: HelmRepository
+        name: datawire
+      version: 6.9.1
+  interval: 1m
+  values:
+    enableAES: false
+  install:
+    crds: CreateReplace
+  upgrade:
+    crds: CreateReplace
+  postRenderers:
+    - kustomize:
+        patchesStrategicMerge:
+          - apiVersion: apps/v1
+            kind: Deployment
+            metadata:
+              name: emissary-ambassador
+              namespace: emissary
+            spec:
+              template:
+                metadata:
+                  annotations:
+                    linkerd.io/inject: ingress
+                    config.linkerd.io/skip-inbound-ports: "80,443"
+                    config.linkerd.io/proxy-require-identity-inbound-ports: "4183"
+          - apiVersion: apps/v1
+            kind: Deployment
+            metadata:
+              name: emissary-ambassador-agent
+              namespace: emissary
+            spec:
+              template:
+                metadata:
+                  annotations:
+                    linkerd.io/inject: enabled
