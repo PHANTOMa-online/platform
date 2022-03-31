@@ -6,11 +6,11 @@ metadata:
 spec:
   chart:
     spec:
-      chart: linkerd2
+      chart: linkerd-control-plane
       sourceRef:
         kind: HelmRepository
         name: linkerd-edge
-      version: 22.3.4
+      version: edge-22.3.4
   interval: 1m
   dependsOn:
     - name: linkerd-cni

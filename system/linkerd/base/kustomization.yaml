@@ -11,6 +11,7 @@ resources:
   - repo.yaml
 
   - release-cni.yaml
-  - release-base.yaml
+  - release-crds.yaml
+  - release-control-plane.yaml
   - release-viz.yaml
   - release-jaeger.yaml
