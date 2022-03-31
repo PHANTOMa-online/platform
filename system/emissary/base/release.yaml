@@ -10,7 +10,7 @@ spec:
       sourceRef:
         kind: HelmRepository
         name: datawire
-      version: 2.2.2
+      version: 7.3.2
   interval: 1m
   values:
     deploymentAnnotations:
