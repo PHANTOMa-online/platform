@@ -5,8 +5,8 @@ resources:
 
   - trust-anchor.enc.yaml
   - webhook-issuer.enc.yaml
-  - mtls-pki.yaml
-  - webhook-pki.yaml
+  - pki-mtls.yaml
+  - pki-webhook.yaml
 
   - repo.yaml
 
