@@ -8,6 +8,8 @@ spec:
     kind: GitRepository
     name: flux-system
   path: ./system/emissary/base
+  dependsOn:
+    - name: linkerd
   prune: true
   validation: client
   interval: 1m

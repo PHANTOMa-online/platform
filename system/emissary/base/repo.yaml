@@ -5,4 +5,4 @@ metadata:
   namespace: emissary
 spec:
   interval: 1h
-  url: https://www.getambassador.io
+  url: https://app.getambassador.io
