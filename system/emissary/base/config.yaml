@@ -1,4 +1,4 @@
-apiVersion: kustomize.toolkit.fluxcd.io/v1beta1
+apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
 kind: Kustomization
 metadata:
   name: emissary-config
@@ -11,5 +11,5 @@ spec:
   dependsOn:
     - name: emissary
   prune: true
-  validation: client
+  wait: true
   interval: 1m
