@@ -1,5 +1,5 @@
 ---
-apiVersion: source.toolkit.fluxcd.io/v1beta1
+apiVersion: source.toolkit.fluxcd.io/v1beta2
 kind: GitRepository
 metadata:
   name: flux-system
@@ -7,7 +7,7 @@ metadata:
 spec:
   interval: 1m0s
   ref:
-    branch: main
+    branch: develop
   secretRef:
     name: flux-system
   url: ssh://git@github.com/PHANTOMa-online/platform
@@ -24,4 +24,3 @@ spec:
   sourceRef:
     kind: GitRepository
     name: flux-system
-  validation: client
