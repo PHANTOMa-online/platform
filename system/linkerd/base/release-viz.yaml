@@ -13,7 +13,7 @@ spec:
       version: 30.0.10-edge
   interval: 1m
   dependsOn:
-    - name: linkerd
+    - name: linkerd-control-plane
       namespace: linkerd
   valuesFrom:
     - kind: Secret
