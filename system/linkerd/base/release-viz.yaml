@@ -10,7 +10,7 @@ spec:
       sourceRef:
         kind: HelmRepository
         name: linkerd-edge
-      version: edge-22.3.4
+      version: 30.0.10-edge
   interval: 1m
   dependsOn:
     - name: linkerd

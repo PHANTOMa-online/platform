@@ -10,4 +10,5 @@ spec:
       sourceRef:
         kind: HelmRepository
         name: linkerd-edge
+      version: 1.0.2-edge
   interval: 1m

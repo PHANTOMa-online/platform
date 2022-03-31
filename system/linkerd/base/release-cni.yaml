@@ -10,7 +10,7 @@ spec:
       sourceRef:
         kind: HelmRepository
         name: linkerd-edge
-      version: edge-22.3.4
+      version: 30.0.11-edge
   interval: 1m
   values:
     # The namespace is already created by us
