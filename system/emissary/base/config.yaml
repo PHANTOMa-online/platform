@@ -8,8 +8,6 @@ spec:
     kind: GitRepository
     name: flux-system
   path: ./system/emissary/base/config
-  dependsOn:
-    - name: emissary
   prune: true
   wait: true
   interval: 1m
