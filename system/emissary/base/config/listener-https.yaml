@@ -7,10 +7,10 @@ spec:
   port: 443
   protocol: HTTPS
   securityModel: XFP
-  l7depth: 0
+  l7Depth: 0
   hostBinding:
     namespace:
       from: ALL
-    seletor:
+    selector:
       matchLabels:
         phantoma.online/listener: https
