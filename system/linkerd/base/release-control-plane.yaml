@@ -37,6 +37,15 @@ spec:
     # --linkerd-cni-enabled
     cniEnabled: true
 
+    # Override proxy-init to run as root, which is needed for docker
+    # container runtime.
+    #
+    # TODO: Switch to containerd
+    #
+    # See https://github.com/linkerd/linkerd2/issues/7308
+    proxyInit:
+      runAsRoot: true
+
     # Use the linkerd-proxy-injector-k8s-tls secret managed by cert-manager
     proxyInjector:
       externalSecret: true
