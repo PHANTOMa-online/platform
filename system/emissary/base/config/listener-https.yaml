@@ -1,0 +1,16 @@
+apiVersion: getambassador.io/v3alpha1
+kind: Listener
+metadata:
+  name: https
+  namespace: emissary
+spec:
+  port: 443
+  protocol: HTTPS
+  securityModel: XFP
+  l7depth: 0
+  hostBinding:
+    namespace:
+      from: ALL
+    seletor:
+      matchLabels:
+        phantoma.online/listener: https
