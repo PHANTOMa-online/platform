@@ -34,3 +34,9 @@ spec:
                     linkerd.io/inject: ingress
                     config.linkerd.io/skip-inbound-ports: "80,443"
                     config.linkerd.io/proxy-require-identity-inbound-ports: "4183"
+                spec:
+                  containers:
+                    - name: emissary-ingress
+                      env:
+                        - name: SCOUT_DISABLE
+                          value: '1'
