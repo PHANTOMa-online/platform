@@ -31,7 +31,7 @@ spec:
               template:
                 metadata:
                   annotations:
-                    linkerd.io/inject: ingress
+                    linkerd.io/inject: enabled
                     config.linkerd.io/skip-inbound-ports: "80,443"
                     config.linkerd.io/proxy-require-identity-inbound-ports: "4183"
                 spec:
