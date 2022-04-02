@@ -13,13 +13,24 @@ spec:
       version: 7.3.2
   interval: 1m
   values:
-    deploymentAnnotations:
-      linkerd.io/inject: ingress
-      config.linkerd.io/skip-inbound-ports: "80,443"
-      config.linkerd.io/proxy-require-identity-inbound-ports: "4183"
     agent:
       enabled: false
   install:
     crds: CreateReplace
   upgrade:
     crds: CreateReplace
+  postRenderers:
+    - kustomize:
+        patchesStrategicMerge:
+          - apiVersion: apps/v1
+            kind: Deployment
+            metadata:
+              name: emissary-ingress
+              namespace: emissary-system
+            spec:
+              template:
+                metadata:
+                  annotations:
+                    linkerd.io/inject: ingress
+                    config.linkerd.io/skip-inbound-ports: "80,443"
+                    config.linkerd.io/proxy-require-identity-inbound-ports: "4183"
