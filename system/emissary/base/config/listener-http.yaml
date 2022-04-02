@@ -1,7 +1,7 @@
 apiVersion: getambassador.io/v3alpha1
 kind: Listener
 metadata:
-  name: https
+  name: http
   namespace: emissary-system
 spec:
   port: 80
