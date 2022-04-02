@@ -13,5 +13,6 @@ resources:
   - release-cni.yaml
   - release-crds.yaml
   - release-control-plane.yaml
+  - release-multicluster.yaml
   - release-viz.yaml
   - release-jaeger.yaml

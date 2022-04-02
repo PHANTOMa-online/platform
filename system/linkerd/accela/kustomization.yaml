@@ -4,4 +4,5 @@ resources:
   - ../base
 patchesStrategicMerge:
   - ../base/release-control-plane-ha.yaml
+  - ../base/release-multicluster-ha.yaml
   - webhook-issuer.accela.enc.yaml

@@ -33,3 +33,12 @@ metadata:
 spec:
   interval: 1h
   url: https://helm.linkerd.io/edge
+---
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: HelmRepository
+metadata:
+  name: linkerd-edge
+  namespace: linkerd-multicluster
+spec:
+  interval: 1h
+  url: https://helm.linkerd.io/edge
