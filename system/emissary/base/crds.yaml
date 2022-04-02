@@ -1,9 +1,4 @@
 # https://app.getambassador.io/yaml/emissary/2.2.2/emissary-crds.yaml
-#
-# Modifications:
-#   - Delete emissary-system Namespace
-#   - s/emissary-system/emissary/g
-#
 # GENERATED FILE: edits made by hand will not be preserved.
 ---
 apiVersion: apiextensions.k8s.io/v1
@@ -24,7 +19,7 @@ spec:
       clientConfig:
         service:
           name: emissary-apiext
-          namespace: emissary
+          namespace: emissary-system
       conversionReviewVersions:
       - v1beta1
   group: getambassador.io
@@ -321,7 +316,7 @@ spec:
       clientConfig:
         service:
           name: emissary-apiext
-          namespace: emissary
+          namespace: emissary-system
       conversionReviewVersions:
       - v1beta1
   group: getambassador.io
@@ -432,7 +427,7 @@ spec:
       clientConfig:
         service:
           name: emissary-apiext
-          namespace: emissary
+          namespace: emissary-system
       conversionReviewVersions:
       - v1beta1
   group: getambassador.io
@@ -707,7 +702,7 @@ spec:
       clientConfig:
         service:
           name: emissary-apiext
-          namespace: emissary
+          namespace: emissary-system
       conversionReviewVersions:
       - v1beta1
   group: getambassador.io
@@ -1347,7 +1342,7 @@ spec:
       clientConfig:
         service:
           name: emissary-apiext
-          namespace: emissary
+          namespace: emissary-system
       conversionReviewVersions:
       - v1beta1
   group: getambassador.io
@@ -1452,7 +1447,7 @@ spec:
       clientConfig:
         service:
           name: emissary-apiext
-          namespace: emissary
+          namespace: emissary-system
       conversionReviewVersions:
       - v1beta1
   group: getambassador.io
@@ -1754,7 +1749,7 @@ spec:
       clientConfig:
         service:
           name: emissary-apiext
-          namespace: emissary
+          namespace: emissary-system
       conversionReviewVersions:
       - v1beta1
   group: getambassador.io
@@ -1915,7 +1910,7 @@ spec:
       clientConfig:
         service:
           name: emissary-apiext
-          namespace: emissary
+          namespace: emissary-system
       conversionReviewVersions:
       - v1beta1
   group: getambassador.io
@@ -2931,7 +2926,7 @@ spec:
       clientConfig:
         service:
           name: emissary-apiext
-          namespace: emissary
+          namespace: emissary-system
       conversionReviewVersions:
       - v1beta1
   group: getambassador.io
@@ -3047,7 +3042,7 @@ spec:
       clientConfig:
         service:
           name: emissary-apiext
-          namespace: emissary
+          namespace: emissary-system
       conversionReviewVersions:
       - v1beta1
   group: getambassador.io
@@ -3220,7 +3215,7 @@ spec:
       clientConfig:
         service:
           name: emissary-apiext
-          namespace: emissary
+          namespace: emissary-system
       conversionReviewVersions:
       - v1beta1
   group: getambassador.io
@@ -3455,7 +3450,7 @@ spec:
       clientConfig:
         service:
           name: emissary-apiext
-          namespace: emissary
+          namespace: emissary-system
       conversionReviewVersions:
       - v1beta1
   group: getambassador.io
@@ -3646,7 +3641,7 @@ spec:
       clientConfig:
         service:
           name: emissary-apiext
-          namespace: emissary
+          namespace: emissary-system
       conversionReviewVersions:
       - v1beta1
   group: getambassador.io
@@ -3826,6 +3821,15 @@ spec:
     storage: false
 ---
 ################################################################################
+# Namespace                                                                    #
+################################################################################
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: emissary-system
+---
+################################################################################
 # ServiceAccount                                                               #
 ################################################################################
 ---
@@ -3833,7 +3837,7 @@ apiVersion: v1
 kind: ServiceAccount
 metadata:
   name: emissary-apiext
-  namespace: emissary
+  namespace: emissary-system
   labels:
     app.kubernetes.io/instance: emissary-apiext
     app.kubernetes.io/managed-by: kubectl_apply_-f_emissary-apiext.yaml
@@ -3891,7 +3895,7 @@ roleRef:
   name: emissary-apiext
 subjects:
   - kind: ServiceAccount
-    namespace: emissary
+    namespace: emissary-system
     name: emissary-apiext
 ---
 ################################################################################
@@ -3902,7 +3906,7 @@ apiVersion: rbac.authorization.k8s.io/v1
 kind: Role
 metadata:
   name: emissary-apiext
-  namespace: emissary
+  namespace: emissary-system
   labels:
     app.kubernetes.io/instance: emissary-apiext
     app.kubernetes.io/managed-by: kubectl_apply_-f_emissary-apiext.yaml
@@ -3921,7 +3925,7 @@ apiVersion: rbac.authorization.k8s.io/v1
 kind: RoleBinding
 metadata:
   name: emissary-apiext
-  namespace: emissary
+  namespace: emissary-system
   labels:
     app.kubernetes.io/instance: emissary-apiext
     app.kubernetes.io/managed-by: kubectl_apply_-f_emissary-apiext.yaml
@@ -3933,7 +3937,7 @@ roleRef:
   name: emissary-apiext
 subjects:
 - kind: ServiceAccount
-  namespace: emissary
+  namespace: emissary-system
   name: emissary-apiext
 ---
 ################################################################################
@@ -3944,7 +3948,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: emissary-apiext
-  namespace: emissary
+  namespace: emissary-system
   labels:
     app.kubernetes.io/instance: emissary-apiext
     app.kubernetes.io/managed-by: kubectl_apply_-f_emissary-apiext.yaml
@@ -3965,7 +3969,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: emissary-apiext
-  namespace: emissary
+  namespace: emissary-system
   labels:
     app.kubernetes.io/instance: emissary-apiext
     app.kubernetes.io/managed-by: kubectl_apply_-f_emissary-apiext.yaml

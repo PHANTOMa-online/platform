@@ -2,7 +2,7 @@ apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
   name: emissary-ingress
-  namespace: emissary
+  namespace: emissary-system
 spec:
   chart:
     spec:

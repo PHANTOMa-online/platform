@@ -2,7 +2,7 @@ apiVersion: getambassador.io/v3alpha1
 kind: Module
 metadata:
   name: ambassador
-  namespace: emissary
+  namespace: emissary-system
 spec:
   config:
     add_linkerd_headers: true

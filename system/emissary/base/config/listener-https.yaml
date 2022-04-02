@@ -2,7 +2,7 @@ apiVersion: getambassador.io/v3alpha1
 kind: Listener
 metadata:
   name: https
-  namespace: emissary
+  namespace: emissary-system
 spec:
   port: 443
   protocol: HTTPS
