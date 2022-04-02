@@ -4,7 +4,7 @@ metadata:
   name: http
   namespace: emissary-system
 spec:
-  port: 80
+  port: 8080
   protocol: HTTPS
   securityModel: XFP
   l7Depth: 0

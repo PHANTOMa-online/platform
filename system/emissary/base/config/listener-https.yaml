@@ -4,7 +4,7 @@ metadata:
   name: https
   namespace: emissary-system
 spec:
-  port: 443
+  port: 8443
   protocol: HTTPS
   securityModel: XFP
   l7Depth: 0
