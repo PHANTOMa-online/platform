@@ -1,0 +1,185 @@
+apiVersion: v1
+data:
+    kubeconfig: ENC[AES256_GCM,data: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,iv:WE/P3Nn2wiSPzPNu6kb0bU2f1SloEW3/gfM1YWUiXZM=,tag:tjb+6QiQOzZhTK56QKwlGA==,type:str]
+kind: Secret
+metadata:
+    name: cluster-credentials-xerxes
+    namespace: linkerd-multicluster
+type: mirror.linkerd.io/remote-kubeconfig
+sops:
+    kms: []
+    gcp_kms: []
+    azure_kv: []
+    hc_vault: []
+    age: []
+    lastmodified: "2022-04-03T01:16:48Z"
+    mac: ENC[AES256_GCM,data:kvQlbdhmKvgHFVpzSkUWWw34WJHI3ArN4AZun7mKxN+2ASwMKb+VbfVfmrgkIlEW/XA2S0t67Wp72nqPomuCde5HXIP6MH6gItGnm326ULNnWGiPP3NX9BQuFkFG8aAOQ2CXtcmA3IeQ6v7GwZeqTYt1mFsgkI7GPI9yBQfA6kU=,iv:1vFLLGBEdX5F7FdmKdBuMK+IgaMVMfgf0TAM50A5uLw=,tag:6FMJiUalB5Sk/dkylPveKA==,type:str]
+    pgp:
+        - created_at: "2022-04-03T01:16:48Z"
+          enc: |
+            -----BEGIN PGP MESSAGE-----
+
+            hF4D2JTdupB9onASAQdAgPPhwySndkv9dFKyf0cvp89kN5Ce7wQGGu/bcVJXFy8w
+            wcUQf8YZWc5U7znh7k1ivgCF/NrclTYvue7LvkrV1WnnR0K3oC6y+412pK6P42be
+            0l4BJ9E5fRMGv4qpvITzE32JD5DtwN5FzV33FcFgKjpxS/ZqS9k8QODxppt+PAMI
+            Z5ScVF0wLVz3gaXH3/EngbXlZotB9oSHTQpgEogsq/n4unhBd8c1KD0oSkuPOJRC
+            =XBck
+            -----END PGP MESSAGE-----
+          fp: 91D51E2F33C4BDBAC06AA41FAFE2DD76B6E49C68
+    encrypted_regex: ^(data|stringData)$
+    version: 3.7.1
+---
+apiVersion: multicluster.linkerd.io/v1alpha1
+kind: Link
+metadata:
+  name: xerxes
+  namespace: linkerd-multicluster
+spec:
+  clusterCredentialsSecret: cluster-credentials-xerxes
+  gatewayAddress: gateway-xerxes.phantoma.online
+  gatewayIdentity: linkerd-gateway.linkerd-multicluster.serviceaccount.identity.linkerd.cluster.local
+  gatewayPort: "4143"
+  probeSpec:
+    path: /ready
+    period: 3s
+    port: "4191"
+  selector:
+    matchExpressions:
+    - key: mirror.linkerd.io/exported
+      operator: Exists
+  targetClusterDomain: cluster.local
+  targetClusterLinkerdNamespace: linkerd
+  targetClusterName: xerxes
+---
+kind: ClusterRole
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: linkerd-service-mirror-access-local-resources-xerxes
+  labels:
+    linkerd.io/extension: multicluster
+    component: service-mirror
+    mirror.linkerd.io/cluster-name: xerxes
+rules:
+- apiGroups: [""]
+  resources: ["endpoints", "services"]
+  verbs: ["list", "get", "watch", "create", "delete", "update"]
+- apiGroups: [""]
+  resources: ["namespaces"]
+  verbs: ["list", "get", "watch"]
+---
+kind: ClusterRoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: linkerd-service-mirror-access-local-resources-xerxes
+  labels:
+    linkerd.io/extension: multicluster
+    component: service-mirror
+    mirror.linkerd.io/cluster-name: xerxes
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: linkerd-service-mirror-access-local-resources-xerxes
+subjects:
+- kind: ServiceAccount
+  name: linkerd-service-mirror-xerxes
+  namespace: linkerd-multicluster
+---
+kind: Role
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: linkerd-service-mirror-read-remote-creds-xerxes
+  namespace: linkerd-multicluster
+  labels:
+      linkerd.io/extension: multicluster
+      component: service-mirror
+      mirror.linkerd.io/cluster-name: xerxes
+rules:
+  - apiGroups: [""]
+    resources: ["secrets"]
+    resourceNames: ["cluster-credentials-xerxes"]
+    verbs: ["list", "get", "watch"]
+  - apiGroups: ["multicluster.linkerd.io"]
+    resources: ["links"]
+    verbs: ["list", "get", "watch"]
+---
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: linkerd-service-mirror-read-remote-creds-xerxes
+  namespace: linkerd-multicluster
+  labels:
+      linkerd.io/extension: multicluster
+      component: service-mirror
+      mirror.linkerd.io/cluster-name: xerxes
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: Role
+  name: linkerd-service-mirror-read-remote-creds-xerxes
+subjects:
+  - kind: ServiceAccount
+    name: linkerd-service-mirror-xerxes
+    namespace: linkerd-multicluster
+---
+kind: ServiceAccount
+apiVersion: v1
+metadata:
+  name: linkerd-service-mirror-xerxes
+  namespace: linkerd-multicluster
+  labels:
+    linkerd.io/extension: multicluster
+    component: service-mirror
+    mirror.linkerd.io/cluster-name: xerxes
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    linkerd.io/extension: multicluster
+    component: service-mirror
+    mirror.linkerd.io/cluster-name: xerxes
+  name: linkerd-service-mirror-xerxes
+  namespace: linkerd-multicluster
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      component: linkerd-service-mirror
+      mirror.linkerd.io/cluster-name: xerxes
+  template:
+    metadata:
+      annotations:
+        linkerd.io/inject: enabled
+      labels:
+        component: linkerd-service-mirror
+        mirror.linkerd.io/cluster-name: xerxes
+    spec:
+      containers:
+      - args:
+        - service-mirror
+        - -log-level=info
+        - -event-requeue-limit=3
+        - -namespace=linkerd-multicluster
+        - -enable-pprof=false
+        - xerxes
+        image: cr.l5d.io/linkerd/controller:edge-22.3.5
+        name: service-mirror
+        securityContext:
+          runAsUser: 2103
+        ports:
+        - containerPort: 9999
+          name: admin-http
+      serviceAccountName: linkerd-service-mirror-xerxes
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: probe-gateway-xerxes
+  namespace: linkerd-multicluster
+  labels:
+    mirror.linkerd.io/mirrored-gateway: "true"
+    mirror.linkerd.io/cluster-name: xerxes
+spec:
+  ports:
+  - name: mc-probe
+    port: 4191
+    protocol: TCP

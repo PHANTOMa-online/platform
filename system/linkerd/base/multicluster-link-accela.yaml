@@ -1,0 +1,185 @@
+apiVersion: v1
+data:
+    kubeconfig: ENC[AES256_GCM,data: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,iv:eFVwS2uJoFIK4ouV8+NNvl595+C3krM7oRcYdOUCJOs=,tag:N8fbHlqv4O4r27ft4CVQTA==,type:str]
+kind: Secret
+metadata:
+    name: cluster-credentials-accela
+    namespace: linkerd-multicluster
+type: mirror.linkerd.io/remote-kubeconfig
+sops:
+    kms: []
+    gcp_kms: []
+    azure_kv: []
+    hc_vault: []
+    age: []
+    lastmodified: "2022-04-03T01:15:56Z"
+    mac: ENC[AES256_GCM,data:iYqhXiVY+WZf2HBEs8XXlHIBqvgdq0p0RKh90/hn1Q3yqFhMTZ+W6i6rPEgXzp/SXaFSs+O9tfEXeklR4b2eNI1CIX8GXX6ZibBbAf4j9rPwxvb8ZW9hsavh0Khk7fx3zZtEviaDH5raw5nXhNfB9HhixwlURgaKWOY8hXRicoU=,iv:3gwOMtsb5fjVR9/JOb+2kiVS7bPKkkW8Kh5AV4lmo1Q=,tag:WqI3pIh7nqQpCQ8bejaFuw==,type:str]
+    pgp:
+        - created_at: "2022-04-03T01:15:54Z"
+          enc: |
+            -----BEGIN PGP MESSAGE-----
+
+            hF4D2JTdupB9onASAQdARRNU/x+1nZZX21e8C294AzHTCvAmzyeUcn1qv8+xCi4w
+            megv7kjKUOxDuer2bWNWdy8Wb7IuHEXYw/0topu8wt5O5/4n0MeCJDTbxyPndIQC
+            0l4BxB6mFS9IycRdvwGnzMoahZcXaJznwPQ/sgNR/0SnM1qfXostjAcZ/ApUKCe+
+            u0Kc7XKSlaeMrmpywzIHoOw3irO6IyQELJ2mQ15gKoBupWT5lTUhbmBdg84wJ7Ek
+            =hPOq
+            -----END PGP MESSAGE-----
+          fp: 91D51E2F33C4BDBAC06AA41FAFE2DD76B6E49C68
+    encrypted_regex: ^(data|stringData)$
+    version: 3.7.1
+---
+apiVersion: multicluster.linkerd.io/v1alpha1
+kind: Link
+metadata:
+  name: accela
+  namespace: linkerd-multicluster
+spec:
+  clusterCredentialsSecret: cluster-credentials-accela
+  gatewayAddress: gateway-accela.phantoma.online
+  gatewayIdentity: linkerd-gateway.linkerd-multicluster.serviceaccount.identity.linkerd.cluster.local
+  gatewayPort: "4143"
+  probeSpec:
+    path: /ready
+    period: 3s
+    port: "4191"
+  selector:
+    matchExpressions:
+    - key: mirror.linkerd.io/exported
+      operator: Exists
+  targetClusterDomain: cluster.local
+  targetClusterLinkerdNamespace: linkerd
+  targetClusterName: accela
+---
+kind: ClusterRole
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: linkerd-service-mirror-access-local-resources-accela
+  labels:
+    linkerd.io/extension: multicluster
+    component: service-mirror
+    mirror.linkerd.io/cluster-name: accela
+rules:
+- apiGroups: [""]
+  resources: ["endpoints", "services"]
+  verbs: ["list", "get", "watch", "create", "delete", "update"]
+- apiGroups: [""]
+  resources: ["namespaces"]
+  verbs: ["list", "get", "watch"]
+---
+kind: ClusterRoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: linkerd-service-mirror-access-local-resources-accela
+  labels:
+    linkerd.io/extension: multicluster
+    component: service-mirror
+    mirror.linkerd.io/cluster-name: accela
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: linkerd-service-mirror-access-local-resources-accela
+subjects:
+- kind: ServiceAccount
+  name: linkerd-service-mirror-accela
+  namespace: linkerd-multicluster
+---
+kind: Role
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: linkerd-service-mirror-read-remote-creds-accela
+  namespace: linkerd-multicluster
+  labels:
+      linkerd.io/extension: multicluster
+      component: service-mirror
+      mirror.linkerd.io/cluster-name: accela
+rules:
+  - apiGroups: [""]
+    resources: ["secrets"]
+    resourceNames: ["cluster-credentials-accela"]
+    verbs: ["list", "get", "watch"]
+  - apiGroups: ["multicluster.linkerd.io"]
+    resources: ["links"]
+    verbs: ["list", "get", "watch"]
+---
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: linkerd-service-mirror-read-remote-creds-accela
+  namespace: linkerd-multicluster
+  labels:
+      linkerd.io/extension: multicluster
+      component: service-mirror
+      mirror.linkerd.io/cluster-name: accela
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: Role
+  name: linkerd-service-mirror-read-remote-creds-accela
+subjects:
+  - kind: ServiceAccount
+    name: linkerd-service-mirror-accela
+    namespace: linkerd-multicluster
+---
+kind: ServiceAccount
+apiVersion: v1
+metadata:
+  name: linkerd-service-mirror-accela
+  namespace: linkerd-multicluster
+  labels:
+    linkerd.io/extension: multicluster
+    component: service-mirror
+    mirror.linkerd.io/cluster-name: accela
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    linkerd.io/extension: multicluster
+    component: service-mirror
+    mirror.linkerd.io/cluster-name: accela
+  name: linkerd-service-mirror-accela
+  namespace: linkerd-multicluster
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      component: linkerd-service-mirror
+      mirror.linkerd.io/cluster-name: accela
+  template:
+    metadata:
+      annotations:
+        linkerd.io/inject: enabled
+      labels:
+        component: linkerd-service-mirror
+        mirror.linkerd.io/cluster-name: accela
+    spec:
+      containers:
+      - args:
+        - service-mirror
+        - -log-level=info
+        - -event-requeue-limit=3
+        - -namespace=linkerd-multicluster
+        - -enable-pprof=false
+        - accela
+        image: cr.l5d.io/linkerd/controller:edge-22.3.5
+        name: service-mirror
+        securityContext:
+          runAsUser: 2103
+        ports:
+        - containerPort: 9999
+          name: admin-http
+      serviceAccountName: linkerd-service-mirror-accela
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: probe-gateway-accela
+  namespace: linkerd-multicluster
+  labels:
+    mirror.linkerd.io/mirrored-gateway: "true"
+    mirror.linkerd.io/cluster-name: accela
+spec:
+  ports:
+  - name: mc-probe
+    port: 4191
+    protocol: TCP
